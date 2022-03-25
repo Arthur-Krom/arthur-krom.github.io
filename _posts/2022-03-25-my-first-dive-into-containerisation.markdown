@@ -15,9 +15,9 @@ Docker is an application that allows you to efficiently configure/manage/deploy 
 
 ## Image
 
-An image is essentially a blueprint of what a container should consist of. Similair to classes and instances in programming. To make this 'class' Docker uses a file called a Dockerfile. This file consist of layers.  Usually (always?) the base layer of the image is a a Linux OS such as Alpine or Debian. The next layers describe which commands (such as installing packages) need to be executed, which ports need to be exposed, etc.
+A Docker image is essentially a blueprint of what a container consists of, similar to classes and instances in Object Oriented Programming (OOP). To define this image Docker uses a file called a Dockerfile. This file consist of several layers. The base layer of the image is an OS which is usually a Linux distribution such as Alpine or Debian. The next layers describe which commands (such as installing packages) need to be executed, which ports need to be exposed, etc.
 
 
 ## Container
 
-A container is an instance of an existing image.
+A Docker container is an instance of an existing image. You can have any amount (as long as the hardware permits) containers based on a single image. Things that makes these instances different could be the files (such as a website) that they contain and/or the ports on which they are connected on the host OS.
